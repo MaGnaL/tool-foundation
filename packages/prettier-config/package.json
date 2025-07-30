@@ -1,0 +1,18 @@
+{
+  "name": "@magnal/prettier-config",
+  "version": "4.2.0",
+  "description": "Prettier config for my projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaGnaL/tool-foundation.git"
+  },
+  "homepage": "https://github.com/MaGnaL/tool-foundation",
+  "main": "./index.js",
+  "license": "MIT",
+  "dependencies": {
+    "prettier-plugin-organize-imports": "4.1.0"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
+  }
+}
