@@ -1,8 +1,10 @@
+import { type Config } from 'prettier';
+
 /**
  * @type {import("prettier").Config}
  */
-const config = {
-  plugins: ['prettier-plugin-organize-imports'],
+const config: Config = {
+  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-tailwindcss'],
   singleQuote: true,
   arrowParens: 'always',
   printWidth: 120,
@@ -10,9 +12,8 @@ const config = {
 
   overrides: [
     {
-      files: '**/*.html',
+      files: '*.html',
       options: {
-        printWidth: 150,
         singleQuote: false,
       },
     },

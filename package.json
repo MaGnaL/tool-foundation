@@ -4,16 +4,35 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "@nx/js": "21.2.1",
+    "@nx/js": "22.0.3",
     "@swc-node/register": "~1.9.1",
-    "@swc/core": "~1.5.7",
+    "@swc/core": "^1.5.7",
     "@swc/helpers": "~0.5.11",
-    "@types/prettier": "^2.6.2",
-    "nx": "21.2.1",
-    "prettier": "^2.6.2",
+    "@types/node": "20.19.9",
+    "@types/prettier": "^3.0.0",
+    "nx": "22.0.3",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "tslib": "^2.3.0",
-    "typescript": "~5.8.2"
+    "typescript": "~5.9.2",
+    "verdaccio": "^6.0.5"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "nx": {
+    "includedScripts": [],
+    "targets": {
+      "local-registry": {
+        "executor": "@nx/js:verdaccio",
+        "options": {
+          "port": 4873,
+          "config": ".verdaccio/config.yml",
+          "storage": "tmp/local-registry/storage"
+        }
+      }
+    }
   }
 }
