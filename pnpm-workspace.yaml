@@ -1,0 +1,10 @@
+packages:
+  - packages/*
+
+engineStrict: true
+
+minimumReleaseAge: 4320
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - nx
