@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.4.0
+
+### Breaking Changes
+
+- changed prettier plugins to be `peerDependencies` instead of `dependencies`
+
+## 4.3.0
+
+- include project into tooling monorepo
+
 ## [4.2.0](https://github.com/MaGnaL/prettier-config/compare/v4.1.0...v4.2.0) (2024-01-21)
 
 ### Features

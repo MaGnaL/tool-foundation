@@ -2,9 +2,12 @@
   "name": "@magnal/tool-foundation",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "preinstall": "npx only-allow@1.2.2 pnpm"
+  },
   "private": true,
   "devDependencies": {
+    "@magnal/prettier-config": "workspace:*",
     "@nx/js": "22.0.3",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "^1.5.7",
