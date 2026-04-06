@@ -1,5 +1,8 @@
 # @magnal/prettier-config
 
+> [!NOTE]
+> This project has been moved to [my `web-forge` monorepo](https://github.com/magnal/web-forge) to unify setup and tooling.
+
 My personal shared prettier config.
 
 ## How to use in a project
